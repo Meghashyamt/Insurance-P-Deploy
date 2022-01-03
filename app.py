@@ -23,7 +23,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text='Mileage is  {}'.format(output))
+    return render_template('index.html', prediction_text='Insurance is  {}'.format(output))
 
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
