@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+<!--<img src ="https://www.linkpicture.com/q/telecom.jpg" align="left" />
+ <frameset cols = "30%"> 
+ <frame name = "top" src = "https://www.linkpicture.com/q/telecom.jpg" /></frameset>-->
+ <!--<iframe src = "https://www.linkpicture.com/q/cpcwebinarslides1-170215222004-thumbnail-4_1.jpg" width = "600" height = "350" frameBorder="0" scrolling="no">
+         Sorry your browser does not support inline frames.
+      </iframe>-->
+ <div class="login"><br><br><br><br>
+	<h1 style="color:Tomato";>Predictive Analysis</h1>
+
+     <!-- Main Input For Receiving Query to our ML 
+    <form action="{{ url_for('predict')}}"method="post">
+    	<style> 
+            input[type="text"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            } 
+            input[type="text"]::placeholder {  
+                  
+                /* Firefox, Chrome, Opera */ 
+                text-align: center; 
+            } 
+            .footer {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color: grey;
+                text-align: center;
+            }
+   </style><br><br><br>-->
+   <!--<img src ="https://www.linkpicture.com/q/telecom.jpg" align="left" />-->
+    	<input type="text" name="Gender" placehold7ed="required" placeholder="Gender" required/>
+
+       <input type="text" name="Age" placehold7ed="required" placeholder="Age" required/>
+       
+       <input type="text" name="Driving_License" placehold7ed="required" placeholder="Driving_License" required/>
+
+      <!--<input type="text" name="Region_Code" placehold7ed="required" placeholder="Region_Code" required/>-->
+
+       <input type="text" name="Previouly_Insured" placehold7ed="required" placeholder="Previouly_Insured" required/>
+       
+       <input type="text" name="Vehicle_Age" placehold7ed="required" placeholder="Vehicle_Age" required/>
+
+<input type="text" name="Vehicle_Damage" placehold7ed="required" placeholder="Vehicle_Damage" required/>
+
+       <!--<input type="text" name="Annual_Premium" placehold7ed="required" placeholder="Annual_Premium" required/>-->
+       
+       <input type="text" name="Policy_Sales_Channel" placehold7ed="required" placeholder="Policy_Sales_Channel" required/>
+<input type="text" name="Vintage" placehold7ed="required" placeholder="Vintage" required/>
+       
+       <!--<input type="text" name="clusters" placehold7ed="required" placeholder="clusters" required/>-->
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+<div class="footer">
+  <p>Meghashyam Thiruveedula</p>
+</div>
+
+</body>
+</html>
